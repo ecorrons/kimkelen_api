@@ -1,0 +1,8 @@
+development:
+  database: #DBNAME#
+  adapter:  mysql2
+  encoding: utf8
+  pool:     5
+  username: #USERNAME#
+  password: 
+  host:     #HOST#

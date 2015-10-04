@@ -1,0 +1,1 @@
+json.absences_for_year @student.absences_to_builder(@school_year)

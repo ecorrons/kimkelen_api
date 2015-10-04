@@ -1,0 +1,13 @@
+es:
+  errors:
+    messages:
+      invalid_request: Solicitud incorrecta.
+      not_found: La página que está buscando no existe.
+      something_went_wrong: Algo salió mal.
+      school_year:
+        invalid: Año lectivo inválido.
+      student:
+        invalid: ID inválido de estudiante.
+        invalid_school_year: Año lectivo inválido para el estudiante.
+      tutor:
+        invalid: ID inválido de tutor.
