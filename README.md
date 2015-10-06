@@ -31,24 +31,54 @@ development:
   host:     localhost
 ```
 
-  # Invocación de servicios
+# Invocación de servicios
 
-  Ejemplos de invocación con cURL en servidor local.
+Ejemplos de invocación con cURL en servidor local.
 
-  ## Obtener alumno
+## Obtener alumno
 
  ```
   curl -X GET http://localhost:3000/api/v1/students/:id
-  ```
+ ```
 
-  ## Obtener tutor
+## Obtener tutor
 
-  ```
-  curl -X GET http://localhost:3000/api/v1/tutors/:id
-  ```
+```
+curl -X GET http://localhost:3000/api/v1/tutors/:id
+```
 
-  ## Obtener años lectivos de un alumno
+## Obtener años lectivos de un alumno
 
-  ```
-  curl -X GET http://localhost:3000/api/v1/students/:id/school_years
-  ```
+```
+curl -X GET http://localhost:3000/api/v1/students/:id/school_years
+```
+
+## Obtener años lectivos cargados en el sistema
+
+```
+curl -X GET http://localhost:3000/api/v1/school_years
+```
+
+## Obtener años lectivos cargados en el sistema
+
+```
+curl -X GET http://localhost:3000/api/v1/students/:id/school_years
+```
+
+## Obtener calificaciones de un alumno para un año lectivo
+
+```
+curl -X GET http://localhost:3000/api/v1/students/:id/marks/:school_year
+```
+
+## Obtener inasistencias de un alumno para un año lectivo
+
+```
+curl -X GET http://localhost:3000/api/v1/students/:id/absences/:school_year
+```
+
+## Obtener sanciones disciplinarias de un alumno para un año lectivo
+
+```
+curl -X GET http://localhost:3000/api/v1/students/:id/disciplinary_sanctions/:school_year
+```
