@@ -29,7 +29,7 @@ development:
   username: user
   password: beSAfePlease
   host:     localhost
-
+```
 
   # Invocación de servicios
 
@@ -37,7 +37,7 @@ development:
 
   ## Obtener alumno
 
-  ```
+ ```
   curl -X GET http://localhost:3000/api/v1/students/:id
   ```
 
