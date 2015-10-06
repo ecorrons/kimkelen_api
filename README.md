@@ -1,6 +1,6 @@
 # Kimkëlen API
 
-**API Kimkëlen** provee servicios para obtener información estudiantes y tutores del sistema de gestión integrada de colegios secundarios realizado por el [CeSPI](http://www.cespi.unlp.edu.ar/) perteneciente a la  [Universidad Nacional de La Plata UNLP](http://www.unlp.edu.ar/).
+**API Kimkëlen** provee servicios para obtener información de estudiantes y tutores del sistema de gestión integrada de colegios secundarios realizado por el [CeSPI](http://www.cespi.unlp.edu.ar/) perteneciente a la [Universidad Nacional de La Plata UNLP](http://www.unlp.edu.ar/).
 Los servicios permitirán acceso de consulta a inasistencias, sanciones disciplinarias y calificaciones.
 
 # Instalación
@@ -29,3 +29,26 @@ development:
   username: user
   password: beSAfePlease
   host:     localhost
+
+
+  # Invocación de servicios
+
+  Ejemplos de invocación con cURL en servidor local.
+
+  ## Obtener alumno
+
+  ```
+  curl -X GET http://localhost:3000/api/v1/students/:id
+  ```
+
+  ## Obtener tutor
+
+  ```
+  curl -X GET http://localhost:3000/api/v1/tutors/:id
+  ```
+
+  ## Obtener años lectivos de un alumno
+
+  ```
+  curl -X GET http://localhost:3000/api/v1/students/:id/school_years
+  ```
